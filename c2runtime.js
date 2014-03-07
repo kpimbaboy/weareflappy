@@ -1,4 +1,4 @@
-﻿// krikata krikata pan pan !!!!! flappy mouton flappy mouton
+﻿// krikata krikata pan pan flap mouton flap mouton farotez farotez gilssement yobi yobi !!
 var cr = {};
 cr.plugins_ = {};
 cr.behaviors = {};
@@ -76,7 +76,7 @@ if (typeof Object.getPrototypeOf !== "function")
 		if (x >= 0)
 			return x | 0;
 		else
-			return (x | 0) - 1;		
+			return (x | 0) - 1;		// correctly round down when negative
 	};
 	cr.ceil = function (x)
 	{
@@ -17407,6 +17407,36 @@ cr.getProjectModel = function() { return [
 	]
 ,	[
 		"t8",
+		cr.plugins_.Sprite,
+		false,
+		[],
+		0,
+		0,
+		null,
+		[
+			[
+			"Default",
+			5,
+			false,
+			1,
+			0,
+			false,
+			8147977195382181,
+			[
+				["images/sprite-sheet0.png", 4628, 0, 0, 400, 500, 1, 0.5, 0.5,[],[],1]
+			]
+			]
+		],
+		[
+		],
+		false,
+		false,
+		3453108487902866,
+		[],
+		null
+	]
+,	[
+		"t9",
 		cr.plugins_.Browser,
 		false,
 		[],
@@ -17424,7 +17454,7 @@ cr.getProjectModel = function() { return [
 		,[]
 	]
 ,	[
-		"t9",
+		"t10",
 		cr.plugins_.Touch,
 		false,
 		[],
@@ -17442,7 +17472,7 @@ cr.getProjectModel = function() { return [
 		,[1]
 	]
 ,	[
-		"t10",
+		"t11",
 		cr.plugins_.Sprite,
 		false,
 		[],
@@ -17457,9 +17487,9 @@ cr.getProjectModel = function() { return [
 			1,
 			0,
 			false,
-			6461830386746561,
+			5643565856686176,
 			[
-				["images/sprite-sheet0.png", 191081, 0, 0, 721, 722, 1, 0.5006935000419617, 0.5,[],[],0]
+				["images/sprite2-sheet0.png", 191081, 0, 0, 721, 722, 1, 0.5006935000419617, 0.5,[],[-0.4993065297603607,-0.4986149668693543,0.4979195594787598,-0.4986149668693543,0.4979195594787598,0.4986149668693543,-0.4993065297603607,0.4986149668693543],0]
 			]
 			]
 		],
@@ -17467,7 +17497,7 @@ cr.getProjectModel = function() { return [
 		],
 		false,
 		false,
-		2966229161222411,
+		4008682136380576,
 		[],
 		null
 	]
@@ -17499,8 +17529,8 @@ cr.getProjectModel = function() { return [
 			0,
 			[
 			[
-				[201.0180511474609, 249.5, 0, 392, 495, 0, 0, 1, 0.5006935000419617, 0.5, 0, 0, []],
-				10,
+				[201.5325927734375, 250, 0, 397, 496, 0, 0, 1, 0.5006935000419617, 0.5, 0, 0, []],
+				11,
 				2,
 				[
 				],
@@ -17514,7 +17544,7 @@ cr.getProjectModel = function() { return [
 				]
 			]
 ,			[
-				[159, 432, 0, 87, 27, 0, 0, 1, 0, 0, 0, 0, []],
+				[162, 431, 0, 72, 24, 0, 0, 1, 0, 0, 0, 0, []],
 				1,
 				1,
 				[
@@ -17955,7 +17985,7 @@ false,false,1620992456180981,false
 				9923654974799748,
 				[
 				[
-					9,
+					10,
 					cr.plugins_.Touch.prototype.cnds.OnTouchStart,
 					null,
 					1,
@@ -18970,40 +19000,6 @@ false,false,1620992456180981,false
 				[
 					6,
 					"Game"
-				]
-				]
-			]
-			]
-		]
-,		[
-			0,
-			null,
-			false,
-			null,
-			8396635392973638,
-			[
-			],
-			[
-			[
-				8,
-				cr.plugins_.Browser.prototype.acts.GoToURLWindow,
-				null,
-				1019312985089478,
-				false
-				,[
-				[
-					1,
-					[
-						2,
-						"https://www.scirra.com/tutorials/857/flappy-birds-clone-in-10-minutes"
-					]
-				]
-,				[
-					1,
-					[
-						2,
-						"NewWindow"
-					]
 				]
 				]
 			]
